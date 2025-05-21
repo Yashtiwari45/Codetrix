@@ -1,0 +1,93 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 142 63% 55%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 140 70% 26%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 142 63% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 142 63% 55%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-omnitrix-black text-omnitrix-white;
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+.alien-nav-item {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.alien-nav-item:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 0 25px rgba(67, 214, 78, 0.8);
+}
+
+.alien-nav-item.active {
+  transform: scale(1.5);
+  z-index: 20;
+  box-shadow: 0 0 30px rgba(67, 214, 78, 1);
+}
+
+.omnitrix-ring {
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+  box-shadow: 
+    inset 0 0 20px rgba(0, 0, 0, 0.6),
+    0 0 15px 5px rgba(67, 214, 78, 0.4);
+}
+
+.omnitrix-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, #43D64E 0%, #156F1E 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(67, 214, 78, 0.8);
+}
