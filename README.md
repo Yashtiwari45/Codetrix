@@ -14,3 +14,4 @@ Beyond its unique design, Codetrix serves as a **learning companion** for studen
 Codetrix aims to **bridge the gap between learning and practical application**, helping students sharpen their skills in an interactive and rewarding way.
 
 🚀 More features and enhancements are on the way—stay tuned!
+......
