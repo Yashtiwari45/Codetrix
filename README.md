@@ -15,5 +15,4 @@ Codetrix aims to **bridge the gap between learning and practical application**, 
 
 🚀 More features and enhancements are on the way—stay tuned!
 l
-.....
-
+.
